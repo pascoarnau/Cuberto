@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 40px 40px; /* Aumenta el padding para más espacio */
+  text-align: center;
+  position: relative;
+}
+
+header p {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.resaltado {
+  color: #00FF0000;
+}
+h1 {
+  color: teal;
+  font-size: 83px;
+  text-align: left;
+  margin: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.projecte {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centra las secciones */
+  align-items: left; /* Centra verticalmente las secciones */
+  padding: 40px 20px;
+}
+
+.projecte:nth-child(odd) {
+  background-color: #F5EEF5; /* Color de fondo de la sección 1 */
+}
+
+.projecte:nth-child(even) {
+  background-color: #F2F9F8; /* Color de fondo de la sección 2 */
+}
+
+.projecte:nth-child(3) {
+  background-color: #FAF5F3; /* Color de fondo de la sección 3 */
+}
+
+.projecte .text, .projecte .imatge {
+  flex: 1;
+  margin: 10px;
+  max-width: 600px; /* Limita el ancho máximo de las secciones */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.projecte .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.projecte .text h2 {
+  font-size: 36px; /* Tamaño de fuente del título */
+  margin-bottom: 10px;
+}
+
+.projecte .imatge img {
+  width: 100%;
+  max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+}
+
+.tags {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* Estilos específicos para los párrafos de cada sección */
+.section1-paragraph1 {
+  font-size: 45px; /* Ajusta el tamaño de fuente para la sección 1 */
+  color: gray;
+  text-align: left;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+}
+
+.section1-paragraph2 {
+  font-size: 20px; /* Ajusta el tamaño de fuente para la sección 1 */
+  color: black;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  text-align: left;
+}
+
+.section2-paragraph1 {
+  font-size: 45px; /* Ajusta el tamaño de fuente para la sección 2 */
+  color: gray;
+  text-align: left;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+}
+
+.section2-paragraph2 {
+  font-size: 20px; /* Ajusta el tamaño de fuente para la sección 2 */
+  color: black;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  text-align: left;
+}
+
+.section3-paragraph1 {
+  font-size: 45px; /* Ajusta el tamaño de fuente para la sección 3 */
+  color: gray;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  text-align: left;
+}
+
+.section3-paragraph2 {
+  font-size: 20px; /* Ajusta el tamaño de fuente para la sección 3 */
+  color: black;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projecte {
+    flex-direction: column;
+  }
+
+  header p {
+    position: static;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.contact {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.contact-column h3 {
+  margin-bottom: 10px;
+}
+
+.contact-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-column li {
+  margin-bottom: 5px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .projecte {
+    flex-direction: column;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-column {
+    margin: 10px 0;
+  }
+}
